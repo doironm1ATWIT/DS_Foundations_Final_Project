@@ -18,7 +18,7 @@ INSERT PIC FROM .unique()
 
 Going forward, the 5 genres that were looked at were heavy-metal, pop, country, hip-hop, and classical. This resulted in us having 5000 samples to work with. Since all of the genres were grouped together in the dataframe, a decision was made to shuffle the dataframe in case the test_train_split did not pick randomly enough. 
 
-![data_screenshot]('./clean csv function.png')
+![data_screenshot](./clean_csv_function.png)
 
 ![data_screenshot](./reducedgenres.png)
 
@@ -43,6 +43,9 @@ Confusion Matrix
 
 
 ## Results
+
+Python Function:
+
 
 Random Forest Classifier:
 
