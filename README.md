@@ -14,13 +14,13 @@ When selecting the data, all NaN values were dropped from the dataset to avoid a
 After seeing exactly how many different genres there were in this dataset the decision was made to pick only 5 out of the 114 genres. 
 
 INSERT PIC FROM .unique()
-![data screenshot](./different_genres.png)
+![data screenshot](result_screenshots/different_genres.png)
 
 Going forward, the 5 genres that were looked at were heavy-metal, pop, country, hip-hop, and classical. This resulted in us having 5000 samples to work with. Since all of the genres were grouped together in the dataframe, a decision was made to shuffle the dataframe in case the test_train_split did not pick randomly enough. 
 
-![data_screenshot](./clean_csv_function.png)
+![data_screenshot](function_screenshots/clean_csv_function.png)
 
-![data_screenshot](./reducedgenres.png)
+![data_screenshot](result_screenshots/reducedgenres.png)
 
 
 ## Methods
