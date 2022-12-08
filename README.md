@@ -3,7 +3,7 @@
 ## Introduction
   The objective of this project was to see if we can predict genre of a song from different measures like acousticness, danceability, tempo, and many other features. In this project, we use different machine learning supervised classification algorithms to see how accurately we can predict genre from the different measures in the dataset. This project uses a dataset from downloaded from kaggle that has over 113,000 datapoints. 
 
-##Selection of Data
+## Selection of Data
 
 The model processing and training are conducted in the same Jupyter Notebook ( insert link).
 
@@ -20,7 +20,7 @@ Going forward, the 5 genres that were looked at were heavy-metal, pop, country, 
 
 
 
-##Methods
+## Methods
 Tools:
 * Numpy, Pandas, Scikit for data analysis and inference. 
 * Seaborn and Matplotlib for visualizations
@@ -39,7 +39,7 @@ Accuracy Score
 Confusion Matrix
 
 
-##Results
+## Results
 
 Random Forest Classifier:
 
@@ -83,12 +83,12 @@ insert pic
 Gradient
 
 
-##Discussion
+## Discussion
 The model that performed the best without hyperparameter tuning was (insert). The model with the lowest accuracy score was Support Vector Classifier with an accuracy score of (insert). After deciding to continue with Random Forest Classifier and Gradient Boosting Classifier, the scores from the GridSearch were (insert scores), respectively. Noticing there was not much difference in scores from the initial testing, RandomSearchCV was explored to see if more hyperparamters could be used. The results from the hyperparamters for Random Forest Classifier was insert score, and thebest parameters were insert params. 
 The results from the RandomSearch for Gradient Boosting Classifier were insert score and params. Looking at the different features in this data set like acousticness and danceability, we can determine that these feature do in fact have the ability to predict the genre of the song. 
 
 
-##Summary
+## Summary
 
 
-##References
+## References
