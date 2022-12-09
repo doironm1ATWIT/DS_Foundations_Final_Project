@@ -13,14 +13,13 @@ When selecting the data, all NaN values were dropped from the dataset to avoid a
 
 After seeing exactly how many different genres there were in this dataset the decision was made to pick only 5 out of the 114 genres. 
 
-INSERT PIC FROM .unique()
-![data screenshot](./different_genres.png)
+![data screenshot](result_screenshots/different_genres.png)
 
 Going forward, the 5 genres that were looked at were heavy-metal, pop, country, hip-hop, and classical. This resulted in us having 5000 samples to work with. Since all of the genres were grouped together in the dataframe, a decision was made to shuffle the dataframe in case the test_train_split did not pick randomly enough. 
 
-![data_screenshot](./clean_csv_function.png)
+![data_screenshot](function_screenshots/clean_csv_function.png)
 
-![data_screenshot](./reducedgenres.png)
+![data_screenshot](result_screenshots/data_info.png)
 
 
 ## Methods
@@ -45,22 +44,20 @@ Confusion Matrix
 ## Results
 
 Python Function:
-
+![data_screenshot](function_screenshots/modeling_function.png)
 
 Random Forest Classifier:
 
-insert pic
+![data_screenshot](result_screenshots/random_forest.png)
 
 
 Support Vector Classifier:
+![data_screenshot](result_screenshots/support_vector_machine.png)
 
-
-insert pic
 
 
 Gradient Boosting Classifier:
-
-insert pic
+![data_screenshot](result_screenshots/gradient_boosting.png)
 
 
 After the initial model testing, the two with the highest accuracy scores, and were close in score, were Random Forest and Gradient Boosting. We proceed next with looking at how we could adjust these parameters to allow for a higher accuracy score with these two models. The first method that is used is GridSearchCV. 
