@@ -163,7 +163,7 @@ best hyperparameters being:
 
  The model that had the highest accuracy in predicting genre in our dataset was Random Forest with a accuracy of 87.6 percent after hyperparameter tuning. 
 
- For future research, I would like to look into predicting popularity in this dataset to see if genre, or any of the other features will contribute to the popularity value. 
+ For future research, I would like to look into predicting popularity in this dataset to see if genre, or any of the other features will contribute to the popularity value. I noticed other people on Kaggle have been using this dataset to predict popularity. 
 
 ## Summary
   
