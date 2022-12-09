@@ -1,14 +1,14 @@
 # DS_Foundations_Final_Project
 
 ## Introduction
-  The objective of this project was to see if we can predict genre of a song from different measures like acousticness, danceability, tempo, and many other features. In this project, we use different supervised classification algorithms to see how accurately we can predict genre from the different measures in the dataset. 
+  The objective of this project was to see genre of a song can be predicted from different measures like acousticness, danceability, tempo, and many other features. In this project, different supervised classification algorithms are used to see how accurately genre can be predicted from the different measures in the dataset. After the initial analysis, hyperparameter tuning using GridSearchCV and RandomSearch CV is conducted to see if the accuracy score can increase.
   
-INSERT MORE INFO ABOUT DATA IN INTRO
+
 
 ## Selection of Data
 
 The model processing and training are conducted in the same Jupyter Notebook which can be found [here](https://github.com/doironm1ATWIT/DS_Foundations_Final_Project/blob/main/MeganDoiron_DS_Foundations_Project.ipynb).
-This project uses a dataset that is downloaded from [Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset/code)[1] that has over 113,000 datapoints. 
+This project uses a dataset that is downloaded from [Kaggle](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset/code)[1].
 
 The data has over 113,000 datapoints with 19 different features: 
 * track_id 
@@ -31,7 +31,7 @@ The data has over 113,000 datapoints with 19 different features:
 * tempo
 * time_signature 
 
-The objective of this project is to see if we can use these features to predict track_genre of a song. 
+The objective of this project is to see if the usee these features can predict track_genre of a song. 
 
 When selecting the data, all NaN values were dropped from the dataset to avoid any problems. The features track_id, artists, album_name, track_name, and explicit were dropped from the dataframe as these features will not be helpful in predicting genre. 
 
@@ -45,7 +45,7 @@ Going forward, the 5 genres that were looked at were heavy-metal, pop, country, 
 
 ![data_screenshot](result_screenshots/data_info.png)
 
-Since we are using data that has labels assigned and the labels are discrete, we will be using supervised classification machine learning models to determine our hypothesis.
+Since this data has labels (track_genre) assigned and the labels are discrete, we will be using supervised classification machine learning models to determine the hypothesis.
 
 
 ## Methods
@@ -78,22 +78,23 @@ Random Forest Classifier:
 
 ![data_screenshot](result_screenshots/random_forest.png)
 
-Random Forest ended up having a test accuracy score of about 87.5 percent. The train accuracy score on the model is about 98.4 percent. Since our test accuracy score is close to our train accuracy score, this tells us that random forest is a good model to use for this problem. Looking at the heatmap, we can also see that this model did well with predicting our true values. 
+Random Forest ended up having a test accuracy score of about 87.5 percent. The train accuracy score on the model is about 98.4 percent. Since the test accuracy score is close to the train accuracy score, this tells us that random forest is a good model to use for this problem. Looking at the heatmap, we can also see that this model did well with predicting our true values. 
 
 
 Support Vector Classifier:
 ![data_screenshot](result_screenshots/support_vector_machine.png)
 
-Support Vector Classifier had a test accuracy score of about 37.5 percent. The training accuracy score is about 36.1. Since our training accuracy score is very low as well, we can determine that Support Vector Classifier will not be a good model for our data.
+Support Vector Classifier had a test accuracy score of about 37.5 percent. The training accuracy score is about 36.1. Since our training accuracy score is very low as well, we can determine that Support Vector Classifier will not be a good model for this data.
 
 
 Gradient Boosting Classifier:
 ![data_screenshot](result_screenshots/gradient_boosting.png)
 
-Gradient Boosting Classifier has a test accuracy score of about 86.7 percent. The training accuracy score is about 94.5 percent. This is a good model for us to use due to the test accuracy score being close to the training accuracy score, and the fact that our training data was predicting about 94.5 percent of the genres.
+Gradient Boosting Classifier has a test accuracy score of about 86.7 percent. The training accuracy score is about 94.5 percent. This is a good model for us to use due to the test accuracy score being close to the training accuracy score, and the fact that the training data was predicting about 94.5 percent of the genres.
 
 
-After the initial model testing, the two with the highest accuracy scores, and were close in score, were Random Forest and Gradient Boosting. We proceed next with looking at how we could adjust these parameters to allow for a higher accuracy score with these two models. The first method that is used is GridSearchCV. 
+After the initial model testing, the two with the highest accuracy scores, and were close in score, were Random Forest and Gradient Boosting.
+Next, hyperparameter tuning will be used to look at how we could adjust these parameters to allow for a higher accuracy score with these two models. The first method that is used is GridSearchCV. 
 
 Python Function:
 ![data_screenshot](function_screenshots/grid_search_function.png)
@@ -170,3 +171,4 @@ This project looks at different ways to measure music (acousticness, dancibility
 
 ## References
 [1] [Kaggle Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset/code)
+
